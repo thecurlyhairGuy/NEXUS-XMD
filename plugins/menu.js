@@ -5,26 +5,17 @@ const { runtime } = require('../lib/functions');
 const axios = require('axios');
 
 cmd({
-    pattern: "menu",
+    pattern: "menu2",
     desc: "menu the bot",
     category: "menu",
-    react: "🤍",
+    react: "🔥",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         let dec = `
-彡༺⌘༆❞*${config.BOT_NAME}*彡༺⌘༆❞ 
-│👑 *Owner:* ${config.OWNER_NAME}
-│🌀 *Baileys:* Multi Device
-│💻 *Type:* NodeJs
-│☁️ *Platform:* Heroku
-│🌐 *Mode:* [${config.MODE}]
-│⚡ *Prefix:* [${config.PREFIX}]
-│🛠 *Version:* 3.0.0 ★‡†
-└───────────────
-
-
+╭━〔NEXUS-XMD〕━━┈⊷
+┃★╭────────────
 ©MR PK DRILLER 
 📌 QURAN-MENU 🪀
 
@@ -250,14 +241,38 @@ _________________________
 ★ 25 . nexus
 ★ 27 . mpesamenu
 _________________________
+┃🔸└───────────┈⊷
+╰──────────────┈⊷
+> ${config.DESCRIPTION}`;
 
-*${config.DESCRIPTION}*`;
+        await conn.sendMessage(
+            from,
+            {
+                image: { url: `https://files.catbox.moe/wk45ik.jpg` },
+                caption: dec,
+                contextInfo: {
+                    mentionedJid: [m.sender],
+                    forwardingScore: 999,
+                    isForwarded: true,
+                    forwardedNewsletterMessageInfo: {
+                        newsletterJid: '120363382023564830@newsletter',
+                        newsletterName: '🚀 NEXUS-XMD 🪀',
+                        serverMessageId: 143
+                    }
+                }
+            },
+            { quoted: mek }
+        );
 
-        await conn.sendMessage(from, { image: { url: `https://i.ibb.co/gZLdygsz/nexus-xmd.jpg` }, caption: dec }, { quoted: mek });
-
+        // Send audio
+        await conn.sendMessage(from, {
+            audio: { url: 'https://files.catbox.moe/wify3q.mp3' },
+            mimetype: 'audio/mp4',
+            ptt: true
+        }, { quoted: mek });
+        
     } catch (e) {
         console.log(e);
         reply(`${e}`);
     }
 });
-
