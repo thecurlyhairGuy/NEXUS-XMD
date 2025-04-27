@@ -20,7 +20,7 @@ cmd({
     await reply("```🔍 Checking for NEXUS-XMD updates...```\n");  
       
     // Get latest commit from GitHub  
-    const { data: commitData } = await axios.get("https://api.github.com/repos/caswyweb/NOVA-XMD/commits/main");  
+    const { data: commitData } = await axios.get("https://api.github.com/repos/Pkdriller/NEXUS-XMD/commits/main");  
     const latestCommitHash = commitData.sha;  
 
     // Get current commit hash  
@@ -40,7 +40,7 @@ cmd({
       
     // Download latest code  
     const zipPath = path.join(__dirname, "latest.zip");  
-    const { data: zipData } = await axios.get("https://github.com/Mrhanstz/NOVA-XMD/archive/main.zip", { responseType: "arraybuffer" });  
+    const { data: zipData } = await axios.get("https://github.com/Pkdriller/NEXUS-XMD/archive/main.zip", { responseType: "arraybuffer" });  
     fs.writeFileSync(zipPath, zipData);  
 
     await reply("```📦 Extracting the latest code...```\n");  

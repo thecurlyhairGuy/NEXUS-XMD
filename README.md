@@ -38,7 +38,7 @@ href="https://github.com/pkdriller/NEXUS-XMD/graphs/commit-activity"><img height
  
 
   > **⚠️ OPTION ONE**
-  <a href='https://nexus-xmd-piar.onrender.com' target="_blank">
+  <a href='https://nexus-xmd-pair-code.onrender.com' target="_blank">
     <img src='https://img.shields.io/badge/PAIR_CODE_1-800080?style=for-the-badge&logo=matrix&logoColor=white&labelColor=000000'/>
   </a></br>
 

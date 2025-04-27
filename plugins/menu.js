@@ -5,10 +5,10 @@ const { runtime } = require('../lib/functions');
 const axios = require('axios');
 
 cmd({
-    pattern: "menu2",
+    pattern: "menu",
     desc: "menu the bot",
     category: "menu",
-    react: "🔥",
+    react: "🪀",
     filename: __filename
 }, 
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
@@ -16,7 +16,16 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         let dec = `
 ╭━〔NEXUS-XMD〕━━┈⊷
 ┃★╭────────────
-©MR PK DRILLER 
+👮©MR PK DRILLER⭐
+
+📌PK EXTRA CMDS🪀
+★ 1 .porn
+★ 2 .xvideos 
+★ 3 .tempmail 
+★ 2 .tempnumber 
+★ 3 .nexus
+★ 4 .wastalk 
+
 📌 QURAN-MENU 🪀
 
 ★ 1 .surah1
@@ -166,6 +175,8 @@ _________________________
 ★ 26 .img
 ★ 27 .apk2
 ★ 28 .video7
+★ 29 .porn
+★ 30 .xvideos 
 _________________________
 📌 GROUP-MENU🪀
 
@@ -237,9 +248,10 @@ _________________________
 ★ 22 .speed
 ★ 23 .fetch
 ★ 24 .report
-★ 25 . adult
+★ 25 . support 
 ★ 25 . nexus
 ★ 27 . mpesamenu
+★ 28 . setprefix 
 _________________________
 ┃🔸└───────────┈⊷
 ╰──────────────┈⊷
@@ -266,7 +278,7 @@ _________________________
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://files.catbox.moe/wify3q.mp3' },
+            audio: { url: 'https://files.catbox.moe/knry5w.mp3' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });

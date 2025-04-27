@@ -5,7 +5,7 @@ const { runtime } = require('../lib/functions');
 const axios = require('axios');
 
 cmd({
-    pattern: "menu",
+    pattern: "mejja",
     desc: "menu the bot",
     category: "menu",
     react: "🤍",
